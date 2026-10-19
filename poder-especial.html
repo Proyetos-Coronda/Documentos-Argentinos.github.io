@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Poder especial — Generador Argentina</title>
+  <meta name="description" content="Generá un modelo de poder especial de simulación para que una persona actúe en nombre de otra, y guardalo en PDF.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Poder especial — Generador Argentina">
+  <meta property="og:description" content="Generá un modelo de poder especial de simulación para que una persona actúe en nombre de otra, y guardalo en PDF.">
+  <meta property="og:url" content="poder-especial.html">
+  <!-- Google Search Console: pegá acá la etiqueta <meta name="google-site-verification" content="..."> que te entregue Search Console. -->
+  <meta name="color-scheme" content="light dark">
+  <script>try{var t=localStorage.getItem("modelosar:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Modelos Argentinos">
+      <span class="ghost">✦</span><span>Modelos AR</span>
+    </a>
+    <nav class="navlinks" aria-label="Principal"><a href="index.html">Inicio</a><a href="index.html#modelos">Todos los modelos</a></nav>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="sim-badge">SIMULACIÓN · sin validez legal</div>
+    <h1>Poder especial</h1>
+    <p>Redactá el texto de un poder para que otra persona actúe en tu nombre.</p>
+    <div class="updated">Última actualización: 19 de octubre de 2026</div>
+  </div>
+</section>
+
+<main id="contenido" class="container" tabindex="-1">
+  <div class="notice warn"><strong>⚠️ Esto es una simulación.</strong> Modelos AR es, por ahora, una simulación de distintos documentos argentinos. Los modelos <strong>no están avalados por ninguna ley ni organismo oficial</strong>, no garantizan validez legal y no reemplazan los formularios, trámites o canales oficiales ni el asesoramiento de un abogado. Usalos solo como referencia o borrador.</div>
+  <div class="notice privacy"><strong>Privacidad:</strong> lo que escribís se procesa solamente en tu navegador y no se envía a ningún servidor. Solo si activás «Guardar borrador», se guarda una copia en este navegador, que podés borrar cuando quieras.</div>
+
+  <section class="workspace">
+    <div class="card">
+      <h2>Completá los datos</h2>
+      <p class="small">La vista previa se actualiza mientras escribís.</p>
+      <form id="form">
+<div class="grid"><div class="field"><label>Poderdante (quien otorga el poder)</label><input name="poderdante" type="text" required></div><div class="field"><label>DNI del poderdante</label><input name="dniPoderdante" type="text" required></div></div><div class="field"><label>Domicilio del poderdante</label><input name="domPoderdante" type="text"></div><div class="grid"><div class="field"><label>Apoderado/a (quien recibe el poder)</label><input name="apoderado" type="text" required></div><div class="field"><label>DNI del apoderado/a</label><input name="dniApoderado" type="text" required></div></div><div class="field"><label>Domicilio del apoderado/a</label><input name="domApoderado" type="text"></div><div class="field"><label>Facultades que se otorgan</label><textarea name="facultades" placeholder="Ej. Realizar en mi nombre el trámite de ... ante ..." required></textarea></div><div class="grid"><div class="field"><label>Vigente hasta (opcional)</label><input name="hasta" type="date"></div><div class="field"><label>Lugar</label><input name="lugar" type="text"></div></div>
+        <div class="actions">
+          <button type="button" class="primary" id="pdf">Descargar / guardar PDF</button>
+          <button type="button" class="copy" id="copy">Copiar texto</button>
+          <a class="button secondary" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+        </div>
+      </form>
+      <p id="status" class="small" aria-live="polite"></p>
+    </div>
+    <div class="card">
+      <h2>Vista previa</h2>
+      <div class="preview-wrap"><div class="preview" id="preview"></div></div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="card"><h2>¿Para qué sirve?</h2><p>Un poder permite que una persona (el poderdante) autorice a otra (el apoderado) a realizar determinados actos en su nombre.</p></div>
+    <div class="card"><h2>¿Cómo se presenta o se usa?</h2><p>Para muchos actos —por ejemplo, operaciones con inmuebles— se exige que el poder se otorgue por escritura pública ante escribano, y bancos u organismos pueden pedir formas específicas. Este texto es solo un borrador de referencia: consultá a un escribano o abogado antes de usarlo.</p></div>
+    <div class="card"><h2>Errores comunes</h2><ul><li>Dar facultades demasiado amplias o poco claras.</li><li>Usar un texto simple cuando el acto exige escritura pública.</li><li>No fijar vigencia ni aclarar cómo se revoca.</li><li>No avisar al banco u organismo ante el que se va a usar.</li></ul></div>
+    <div class="card faq"><h2>Preguntas frecuentes</h2><details><summary>¿Un poder escrito a mano o impreso alcanza?</summary><p>Depende de para qué lo necesites. Para muchos trámites hace falta escribano. Consultá antes con el organismo.</p></details><details><summary>¿Puedo revocarlo?</summary><p>Sí, en general se puede revocar. Conviene hacerlo por escrito y avisar a quien corresponda.</p></details></div>
+    <div class="card sources"><h2>Fuentes oficiales</h2><ul><li><a href="https://www.argentina.gob.ar/normativa" target="_blank" rel="noopener">Argentina.gob.ar — Buscador de normativa nacional</a></li><li><a href="https://www.argentina.gob.ar/justicia/derechofacil" target="_blank" rel="noopener">Argentina.gob.ar — Derecho Fácil</a></li></ul></div>
+    <div class="card"><h2>Páginas relacionadas</h2><div class="related"><a href="declaracion-jurada-domicilio.html">DJ de domicilio</a><a href="autorizacion-uso-imagen.html">Autorización de uso de imagen</a></div></div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><strong>Modelos AR</strong><div class="small">Generadores locales de documentos. Sin servidor. Simulación sin validez legal.</div></div>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+function update() { preview.textContent = `PODER ESPECIAL — MODELO DE SIMULACIÓN
+
+Yo, ${val("poderdante") || "[poderdante]"}, DNI ${val("dniPoderdante") || "[DNI]"}${val("domPoderdante") ? `, con domicilio en ${val("domPoderdante")}` : ""}, OTORGO PODER ESPECIAL a favor de ${val("apoderado") || "[apoderado/a]"}, DNI ${val("dniApoderado") || "[DNI]"}${val("domApoderado") ? `, con domicilio en ${val("domApoderado")}` : ""}, para que en mi nombre y representación pueda realizar lo siguiente:
+
+${val("facultades") || "[describí con precisión qué puede hacer el apoderado]"}
+
+A tal fin, el/la apoderado/a podrá firmar la documentación necesaria, presentar escritos y realizar los actos relacionados con lo indicado, sin que ello implique facultades distintas de las aquí detalladas.
+
+${val("hasta") ? `Este poder estará vigente hasta el ${fd(val("hasta"))}.` : "Este poder rige hasta que sea revocado por escrito."}
+
+${val("lugar") || "Lugar"}, ______________________________
+
+Firma del poderdante: ______________________
+Aclaración: ${val("poderdante")}
+DNI: ${val("dniPoderdante")}`; }
+initApp(update);
+</script>
+</body>
+</html>

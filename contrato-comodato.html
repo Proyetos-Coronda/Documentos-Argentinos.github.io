@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contrato de comodato — Generador Argentina</title>
+  <meta name="description" content="Generá un modelo de contrato de comodato (préstamo de uso gratuito) de simulación y guardalo en PDF desde el navegador.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Contrato de comodato — Generador Argentina">
+  <meta property="og:description" content="Generá un modelo de contrato de comodato (préstamo de uso gratuito) de simulación y guardalo en PDF desde el navegador.">
+  <meta property="og:url" content="contrato-comodato.html">
+  <!-- Google Search Console: pegá acá la etiqueta <meta name="google-site-verification" content="..."> que te entregue Search Console. -->
+  <meta name="color-scheme" content="light dark">
+  <script>try{var t=localStorage.getItem("modelosar:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Modelos Argentinos">
+      <span class="ghost">✦</span><span>Modelos AR</span>
+    </a>
+    <nav class="navlinks" aria-label="Principal"><a href="index.html">Inicio</a><a href="index.html#modelos">Todos los modelos</a></nav>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="sim-badge">SIMULACIÓN · sin validez legal</div>
+    <h1>Contrato de comodato</h1>
+    <p>Un préstamo de uso gratuito de un bien, con plazo y condiciones claras.</p>
+    <div class="updated">Última actualización: 19 de octubre de 2026</div>
+  </div>
+</section>
+
+<main id="contenido" class="container" tabindex="-1">
+  <div class="notice warn"><strong>⚠️ Esto es una simulación.</strong> Modelos AR es, por ahora, una simulación de distintos documentos argentinos. Los modelos <strong>no están avalados por ninguna ley ni organismo oficial</strong>, no garantizan validez legal y no reemplazan los formularios, trámites o canales oficiales ni el asesoramiento de un abogado. Usalos solo como referencia o borrador.</div>
+  <div class="notice privacy"><strong>Privacidad:</strong> lo que escribís se procesa solamente en tu navegador y no se envía a ningún servidor. Solo si activás «Guardar borrador», se guarda una copia en este navegador, que podés borrar cuando quieras.</div>
+
+  <section class="workspace">
+    <div class="card">
+      <h2>Completá los datos</h2>
+      <p class="small">La vista previa se actualiza mientras escribís.</p>
+      <form id="form">
+<div class="grid"><div class="field"><label>Comodante (quien presta)</label><input name="comodante" type="text" required></div><div class="field"><label>DNI del comodante</label><input name="dniComodante" type="text" required></div></div><div class="grid"><div class="field"><label>Comodatario/a (quien recibe)</label><input name="comodatario" type="text" required></div><div class="field"><label>DNI del comodatario/a</label><input name="dniComodatario" type="text" required></div></div><div class="field"><label>Bien que se presta</label><textarea name="bien" placeholder="Ej. Departamento ubicado en ..., o vehículo marca ..., dominio ..." required></textarea></div><div class="field"><label>Para qué se usará</label><input name="uso" type="text" placeholder="Ej. Vivienda familiar"></div><div class="grid"><div class="field"><label>Desde</label><input name="desde" type="date"></div><div class="field"><label>Hasta</label><input name="hasta" type="date"></div></div><div class="field"><label>Gastos de uso y mantenimiento</label><select name="gastos"><option>Corren por cuenta del comodatario</option><option>Corren por cuenta del comodante</option><option>Se dividen en partes iguales</option></select></div><div class="field"><label>Observaciones (opcional)</label><textarea name="obs"></textarea></div>
+        <div class="actions">
+          <button type="button" class="primary" id="pdf">Descargar / guardar PDF</button>
+          <button type="button" class="copy" id="copy">Copiar texto</button>
+          <a class="button secondary" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+        </div>
+      </form>
+      <p id="status" class="small" aria-live="polite"></p>
+    </div>
+    <div class="card">
+      <h2>Vista previa</h2>
+      <div class="preview-wrap"><div class="preview" id="preview"></div></div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="card"><h2>¿Para qué sirve?</h2><p>El comodato es un contrato por el cual una persona presta a otra un bien para que lo use gratuitamente y lo devuelva después. Si se cobra algo a cambio del uso, se trataría de otro tipo de contrato (por ejemplo, una locación).</p></div>
+    <div class="card"><h2>¿Cómo se presenta o se usa?</h2><p>Se redacta por duplicado y cada parte conserva un ejemplar firmado. Conviene describir el bien con precisión, su estado y el plazo. Está regulado en el Código Civil y Comercial: consultá el texto vigente y, si el bien es de valor, la opinión de un profesional.</p></div>
+    <div class="card"><h2>Errores comunes</h2><ul><li>Describir el bien de forma vaga.</li><li>No fijar un plazo o una fecha de devolución.</li><li>Cobrar un monto y seguir llamándolo «comodato».</li><li>No dejar claro quién paga los gastos.</li></ul></div>
+    <div class="card faq"><h2>Preguntas frecuentes</h2><details><summary>¿Puede cobrarse algo?</summary><p>Si se cobra por el uso, ya no sería un préstamo gratuito. Consultá qué tipo de contrato corresponde.</p></details><details><summary>¿Hace falta escribano?</summary><p>Para muchos casos no es obligatorio, pero según el bien y la finalidad puede ser recomendable. Consultalo.</p></details></div>
+    <div class="card sources"><h2>Fuentes oficiales</h2><ul><li><a href="https://www.argentina.gob.ar/normativa" target="_blank" rel="noopener">Argentina.gob.ar — Buscador de normativa nacional</a></li><li><a href="https://www.argentina.gob.ar/justicia/derechofacil" target="_blank" rel="noopener">Argentina.gob.ar — Derecho Fácil</a></li></ul></div>
+    <div class="card"><h2>Páginas relacionadas</h2><div class="related"><a href="contrato-alquiler-temporario.html">Alquiler temporario</a><a href="autorizacion-manejo-vehiculo.html">Autorización de manejo</a></div></div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><strong>Modelos AR</strong><div class="small">Generadores locales de documentos. Sin servidor. Simulación sin validez legal.</div></div>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+function update() { preview.textContent = `CONTRATO DE COMODATO — MODELO DE SIMULACIÓN
+
+Entre ${val("comodante") || "[comodante]"}, DNI ${val("dniComodante") || "[DNI]"}, en adelante EL COMODANTE, y ${val("comodatario") || "[comodatario/a]"}, DNI ${val("dniComodatario") || "[DNI]"}, en adelante EL COMODATARIO, se celebra el presente contrato de comodato, sujeto a las siguientes cláusulas:
+
+PRIMERA (objeto): EL COMODANTE entrega en préstamo de uso, de manera gratuita, el siguiente bien: ${val("bien") || "[descripción del bien]"}.
+
+SEGUNDA (destino): EL COMODATARIO usará el bien para ${val("uso") || "[destino]"} y no podrá cambiar ese destino sin autorización escrita del COMODANTE.
+
+TERCERA (plazo): el préstamo rige desde el ${fd(val("desde")) || "[fecha]"} hasta el ${fd(val("hasta")) || "[fecha]"}, fecha en la que EL COMODATARIO deberá restituir el bien.
+
+CUARTA (gastos): los gastos de uso y mantenimiento ${val("gastos").toLowerCase()}.
+
+QUINTA (conservación): EL COMODATARIO conservará el bien con diligencia y lo devolverá en el estado en que lo recibió, salvo el desgaste normal por el uso.
+${val("obs") ? `\nOBSERVACIONES: ${val("obs")}\n` : ""}
+Lugar y fecha: ______________________________
+
+Firma del comodante: _______________________
+Aclaración: ${val("comodante")}
+
+Firma del comodatario/a: ____________________
+Aclaración: ${val("comodatario")}`; }
+initApp(update);
+</script>
+</body>
+</html>

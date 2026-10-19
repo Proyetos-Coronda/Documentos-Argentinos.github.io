@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Autorización de manejo de vehículo — Generador Argentina</title>
+  <meta name="description" content="Generá un modelo de autorización para que otra persona conduzca un vehículo, de simulación, y guardalo en PDF.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Autorización de manejo de vehículo — Generador Argentina">
+  <meta property="og:description" content="Generá un modelo de autorización para que otra persona conduzca un vehículo, de simulación, y guardalo en PDF.">
+  <meta property="og:url" content="autorizacion-manejo-vehiculo.html">
+  <!-- Google Search Console: pegá acá la etiqueta <meta name="google-site-verification" content="..."> que te entregue Search Console. -->
+  <meta name="color-scheme" content="light dark">
+  <script>try{var t=localStorage.getItem("modelosar:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Modelos Argentinos">
+      <span class="ghost">✦</span><span>Modelos AR</span>
+    </a>
+    <nav class="navlinks" aria-label="Principal"><a href="index.html">Inicio</a><a href="index.html#modelos">Todos los modelos</a></nav>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="sim-badge">SIMULACIÓN · sin validez legal</div>
+    <h1>Autorización de manejo de vehículo</h1>
+    <p>Autorizá a otra persona a conducir tu vehículo con un texto claro y ordenado.</p>
+    <div class="updated">Última actualización: 19 de octubre de 2026</div>
+  </div>
+</section>
+
+<main id="contenido" class="container" tabindex="-1">
+  <div class="notice warn"><strong>⚠️ Esto es una simulación.</strong> Modelos AR es, por ahora, una simulación de distintos documentos argentinos. Los modelos <strong>no están avalados por ninguna ley ni organismo oficial</strong>, no garantizan validez legal y no reemplazan los formularios, trámites o canales oficiales ni el asesoramiento de un abogado. Usalos solo como referencia o borrador.</div>
+  <div class="notice privacy"><strong>Privacidad:</strong> lo que escribís se procesa solamente en tu navegador y no se envía a ningún servidor. Solo si activás «Guardar borrador», se guarda una copia en este navegador, que podés borrar cuando quieras.</div>
+
+  <section class="workspace">
+    <div class="card">
+      <h2>Completá los datos</h2>
+      <p class="small">La vista previa se actualiza mientras escribís.</p>
+      <form id="form">
+<div class="grid"><div class="field"><label>Titular del vehículo</label><input name="titular" type="text" required></div><div class="field"><label>DNI del titular</label><input name="dniTitular" type="text" required></div></div><div class="grid"><div class="field"><label>Conductor autorizado</label><input name="conductor" type="text" required></div><div class="field"><label>DNI del conductor</label><input name="dniConductor" type="text" required></div></div><div class="grid"><div class="field"><label>N.º de licencia (opcional)</label><input name="licencia" type="text"></div><div class="field"><label>Marca y modelo</label><input name="vehiculo" type="text" placeholder="Ej. Fiat Cronos" required></div></div><div class="grid"><div class="field"><label>Dominio (patente)</label><input name="dominio" type="text" placeholder="AB123CD" required></div><div class="field"><label>Año (opcional)</label><input name="anio" type="text"></div></div><div class="grid"><div class="field"><label>Vigente desde</label><input name="desde" type="date"></div><div class="field"><label>Vigente hasta</label><input name="hasta" type="date"></div></div><div class="field"><label>Alcance / restricciones (opcional)</label><textarea name="alcance" placeholder="Ej. Solo dentro del territorio argentino."></textarea></div>
+        <div class="actions">
+          <button type="button" class="primary" id="pdf">Descargar / guardar PDF</button>
+          <button type="button" class="copy" id="copy">Copiar texto</button>
+          <a class="button secondary" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+        </div>
+      </form>
+      <p id="status" class="small" aria-live="polite"></p>
+    </div>
+    <div class="card">
+      <h2>Vista previa</h2>
+      <div class="preview-wrap"><div class="preview" id="preview"></div></div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="card"><h2>¿Para qué sirve?</h2><p>Sirve para dejar constancia de que el titular de un vehículo permite que otra persona lo conduzca durante un período determinado.</p></div>
+    <div class="card"><h2>¿Cómo se presenta o se usa?</h2><p>Llevala impresa junto con la licencia de conducir y la documentación del vehículo. Para circunstancias especiales, como salir del país, suelen pedirse requisitos adicionales (por ejemplo, firma certificada): consultá con el organismo que corresponda antes de viajar.</p></div>
+    <div class="card"><h2>Errores comunes</h2><ul><li>No indicar fechas de vigencia.</li><li>Escribir mal el dominio o los datos de la licencia.</li><li>Suponer que reemplaza los requisitos de un cruce de frontera o del seguro.</li><li>Olvidarte de revisar que el seguro cubra a otros conductores.</li></ul></div>
+    <div class="card faq"><h2>Preguntas frecuentes</h2><details><summary>¿Hace falta certificar la firma?</summary><p>Para uso cotidiano muchas veces no, pero para viajes al exterior u otros trámites puede exigirse. Consultalo antes.</p></details><details><summary>¿Cubre el seguro al conductor autorizado?</summary><p>Depende de tu póliza. Revisá las condiciones con tu aseguradora.</p></details></div>
+    <div class="card sources"><h2>Fuentes oficiales</h2><ul><li><a href="https://www.argentina.gob.ar/normativa" target="_blank" rel="noopener">Argentina.gob.ar — Buscador de normativa nacional</a></li><li><a href="https://www.argentina.gob.ar/justicia/derechofacil" target="_blank" rel="noopener">Argentina.gob.ar — Derecho Fácil</a></li></ul></div>
+    <div class="card"><h2>Páginas relacionadas</h2><div class="related"><a href="autorizacion-viaje-menores.html">Autorización de viaje de menores</a><a href="declaracion-jurada-domicilio.html">DJ de domicilio</a></div></div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><strong>Modelos AR</strong><div class="small">Generadores locales de documentos. Sin servidor. Simulación sin validez legal.</div></div>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+function update() { preview.textContent = `AUTORIZACIÓN DE MANEJO — MODELO DE SIMULACIÓN
+
+Yo, ${val("titular") || "[titular]"}, DNI ${val("dniTitular") || "[DNI]"}, en mi carácter de titular del vehículo ${val("vehiculo") || "[marca y modelo]"}${val("anio") ? `, año ${val("anio")}` : ""}, dominio ${val("dominio") || "[dominio]"}, AUTORIZO a ${val("conductor") || "[conductor]"}, DNI ${val("dniConductor") || "[DNI]"}${val("licencia") ? `, licencia de conducir N.º ${val("licencia")}` : ""}, a conducir dicho vehículo.
+
+Vigencia: desde el ${fd(val("desde")) || "[fecha]"} hasta el ${fd(val("hasta")) || "[fecha]"}.
+
+Alcance / restricciones:
+${val("alcance") || "[sin restricciones indicadas]"}
+
+El conductor autorizado deberá portar su licencia de conducir vigente y la documentación del vehículo exigida.
+
+Lugar y fecha: ______________________________
+
+Firma del titular: ___________________________
+Aclaración: ${val("titular")}
+DNI: ${val("dniTitular")}`; }
+initApp(update);
+</script>
+</body>
+</html>

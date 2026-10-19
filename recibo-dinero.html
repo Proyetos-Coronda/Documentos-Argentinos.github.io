@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Recibo de dinero — Generador Argentina</title>
+  <meta name="description" content="Generá un modelo de recibo de dinero de simulación con el importe en letras y guardalo en PDF desde el navegador.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Recibo de dinero — Generador Argentina">
+  <meta property="og:description" content="Generá un modelo de recibo de dinero de simulación con el importe en letras y guardalo en PDF desde el navegador.">
+  <meta property="og:url" content="recibo-dinero.html">
+  <!-- Google Search Console: pegá acá la etiqueta <meta name="google-site-verification" content="..."> que te entregue Search Console. -->
+  <meta name="color-scheme" content="light dark">
+  <script>try{var t=localStorage.getItem("modelosar:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Modelos Argentinos">
+      <span class="ghost">✦</span><span>Modelos AR</span>
+    </a>
+    <nav class="navlinks" aria-label="Principal"><a href="index.html">Inicio</a><a href="index.html#modelos">Todos los modelos</a></nav>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="sim-badge">SIMULACIÓN · sin validez legal</div>
+    <h1>Recibo de dinero</h1>
+    <p>Dejá constancia de un pago con el importe en números y en letras.</p>
+    <div class="updated">Última actualización: 19 de octubre de 2026</div>
+  </div>
+</section>
+
+<main id="contenido" class="container" tabindex="-1">
+  <div class="notice warn"><strong>⚠️ Esto es una simulación.</strong> Modelos AR es, por ahora, una simulación de distintos documentos argentinos. Los modelos <strong>no están avalados por ninguna ley ni organismo oficial</strong>, no garantizan validez legal y no reemplazan los formularios, trámites o canales oficiales ni el asesoramiento de un abogado. Usalos solo como referencia o borrador.</div>
+  <div class="notice privacy"><strong>Privacidad:</strong> lo que escribís se procesa solamente en tu navegador y no se envía a ningún servidor. Solo si activás «Guardar borrador», se guarda una copia en este navegador, que podés borrar cuando quieras.</div>
+
+  <section class="workspace">
+    <div class="card">
+      <h2>Completá los datos</h2>
+      <p class="small">La vista previa se actualiza mientras escribís.</p>
+      <form id="form">
+<div class="grid"><div class="field"><label>Recibí de (quien paga)</label><input name="pagador" type="text" required></div><div class="field"><label>DNI de quien paga</label><input name="dniPagador" type="text"></div></div><div class="grid"><div class="field"><label>Quien recibe el dinero</label><input name="receptor" type="text" required></div><div class="field"><label>DNI de quien recibe</label><input name="dniReceptor" type="text" required></div></div><div class="grid"><div class="field"><label>Importe</label><input name="importe" type="text" placeholder="Ej. 150000" required></div><div class="field"><label>Moneda</label><select name="moneda"><option>Pesos (ARS)</option><option>Dólares (USD)</option></select></div></div><div class="field"><label>Concepto</label><textarea name="concepto" placeholder="Ej. Pago de seña por la venta de ..." required></textarea></div><div class="grid"><div class="field"><label>Forma de pago</label><select name="formaPago"><option>Efectivo</option><option>Transferencia bancaria</option><option>Cheque</option><option>Otra</option></select></div><div class="field"><label>N.º de recibo (opcional)</label><input name="numero" type="text"></div></div><div class="grid"><div class="field"><label>Fecha</label><input name="fecha" type="date"></div><div class="field"><label>Lugar</label><input name="lugar" type="text"></div></div>
+        <div class="actions">
+          <button type="button" class="primary" id="pdf">Descargar / guardar PDF</button>
+          <button type="button" class="copy" id="copy">Copiar texto</button>
+          <a class="button secondary" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+        </div>
+      </form>
+      <p id="status" class="small" aria-live="polite"></p>
+    </div>
+    <div class="card">
+      <h2>Vista previa</h2>
+      <div class="preview-wrap"><div class="preview" id="preview"></div></div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="card"><h2>¿Para qué sirve?</h2><p>El recibo deja constancia de que una persona recibió una suma de dinero de otra, por un motivo determinado. Sirve como comprobante para ambas partes.</p></div>
+    <div class="card"><h2>¿Cómo se presenta o se usa?</h2><p>Se firma por quien recibe el dinero y se entrega a quien paga, que lo conserva. Conviene hacer dos copias y, en pagos por transferencia, guardar también el comprobante bancario. Este modelo es genérico: para alquileres hay un modelo específico.</p></div>
+    <div class="card"><h2>Errores comunes</h2><ul><li>No indicar el concepto del pago.</li><li>Que el importe en números y en letras no coincidan.</li><li>No firmar o no aclarar la firma.</li><li>No guardar el comprobante de la transferencia.</li></ul></div>
+    <div class="card faq"><h2>Preguntas frecuentes</h2><details><summary>¿Sirve para cualquier pago?</summary><p>Es un modelo genérico de constancia. Para operaciones con requisitos especiales, consultá qué documentación exigen.</p></details><details><summary>¿Debo entregar el original?</summary><p>Se entrega el original a quien paga y quien recibe conserva una copia. Pueden acordar lo contrario.</p></details></div>
+    <div class="card sources"><h2>Fuentes oficiales</h2><ul><li><a href="https://www.argentina.gob.ar/normativa" target="_blank" rel="noopener">Argentina.gob.ar — Buscador de normativa nacional</a></li><li><a href="https://www.argentina.gob.ar/justicia/derechofacil" target="_blank" rel="noopener">Argentina.gob.ar — Derecho Fácil</a></li></ul></div>
+    <div class="card"><h2>Páginas relacionadas</h2><div class="related"><a href="recibo-alquiler.html">Recibo de alquiler</a><a href="pagare.html">Pagaré</a></div></div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><strong>Modelos AR</strong><div class="small">Generadores locales de documentos. Sin servidor. Simulación sin validez legal.</div></div>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+function update() { preview.textContent = `RECIBO${val("numero") ? ` N.º ${val("numero")}` : ""} — MODELO DE SIMULACIÓN
+
+Lugar y fecha: ${val("lugar") || "[lugar]"}, ${fd(val("fecha")) || "[fecha]"}
+
+Recibí de ${val("pagador") || "[quien paga]"}${val("dniPagador") ? `, DNI ${val("dniPagador")}` : ""}, la suma de ${/USD/.test(val("moneda")) ? "USD" : "$"} ${fmtImporte(val("importe")) || "[importe]"} (${importeEnLetras(val("importe"), val("moneda")).toUpperCase() || "[importe en letras]"}), en concepto de:
+
+${val("concepto") || "[concepto]"}
+
+Forma de pago: ${val("formaPago")}
+
+Firma de quien recibe: ______________________
+Aclaración: ${val("receptor")}
+DNI: ${val("dniReceptor")}`; }
+initApp(update);
+</script>
+</body>
+</html>

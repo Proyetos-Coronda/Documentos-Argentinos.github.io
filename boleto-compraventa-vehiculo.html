@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Boleto de compraventa de vehículo — Generador Argentina</title>
+  <meta name="description" content="Generá un modelo de boleto de compraventa de vehículo de simulación, con el precio en letras, y guardalo en PDF.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Boleto de compraventa de vehículo — Generador Argentina">
+  <meta property="og:description" content="Generá un modelo de boleto de compraventa de vehículo de simulación, con el precio en letras, y guardalo en PDF.">
+  <meta property="og:url" content="boleto-compraventa-vehiculo.html">
+  <!-- Google Search Console: pegá acá la etiqueta <meta name="google-site-verification" content="..."> que te entregue Search Console. -->
+  <meta name="color-scheme" content="light dark">
+  <script>try{var t=localStorage.getItem("modelosar:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Modelos Argentinos">
+      <span class="ghost">✦</span><span>Modelos AR</span>
+    </a>
+    <nav class="navlinks" aria-label="Principal"><a href="index.html">Inicio</a><a href="index.html#modelos">Todos los modelos</a></nav>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="sim-badge">SIMULACIÓN · sin validez legal</div>
+    <h1>Boleto de compraventa de vehículo</h1>
+    <p>Dejá por escrito las condiciones de la venta de un vehículo usado.</p>
+    <div class="updated">Última actualización: 19 de octubre de 2026</div>
+  </div>
+</section>
+
+<main id="contenido" class="container" tabindex="-1">
+  <div class="notice warn"><strong>⚠️ Esto es una simulación.</strong> Modelos AR es, por ahora, una simulación de distintos documentos argentinos. Los modelos <strong>no están avalados por ninguna ley ni organismo oficial</strong>, no garantizan validez legal y no reemplazan los formularios, trámites o canales oficiales ni el asesoramiento de un abogado. Usalos solo como referencia o borrador.</div>
+  <div class="notice privacy"><strong>Privacidad:</strong> lo que escribís se procesa solamente en tu navegador y no se envía a ningún servidor. Solo si activás «Guardar borrador», se guarda una copia en este navegador, que podés borrar cuando quieras.</div>
+
+  <section class="workspace">
+    <div class="card">
+      <h2>Completá los datos</h2>
+      <p class="small">La vista previa se actualiza mientras escribís.</p>
+      <form id="form">
+<div class="grid"><div class="field"><label>Vendedor/a</label><input name="vendedor" type="text" required></div><div class="field"><label>DNI del vendedor/a</label><input name="dniVendedor" type="text" required></div></div><div class="field"><label>Domicilio del vendedor/a</label><input name="domVendedor" type="text"></div><div class="grid"><div class="field"><label>Comprador/a</label><input name="comprador" type="text" required></div><div class="field"><label>DNI del comprador/a</label><input name="dniComprador" type="text" required></div></div><div class="field"><label>Domicilio del comprador/a</label><input name="domComprador" type="text"></div><div class="grid"><div class="field"><label>Marca y modelo</label><input name="vehiculo" type="text" required></div><div class="field"><label>Año</label><input name="anio" type="text"></div></div><div class="grid"><div class="field"><label>Dominio (patente)</label><input name="dominio" type="text" required></div><div class="field"><label>N.º de motor / chasis</label><input name="motorChasis" type="text"></div></div><div class="grid"><div class="field"><label>Precio total</label><input name="precio" type="text" placeholder="Ej. 12000000" required></div><div class="field"><label>Moneda</label><select name="moneda"><option>Pesos (ARS)</option><option>Dólares (USD)</option></select></div></div><div class="field"><label>Forma de pago</label><textarea name="formaPago" placeholder="Ej. Se paga en un solo pago, por transferencia, al firmar."></textarea></div><div class="grid"><div class="field"><label>Fecha de firma</label><input name="fecha" type="date"></div><div class="field"><label>Fecha de entrega</label><input name="entrega" type="date"></div></div><div class="field"><label>Deudas e infracciones</label><select name="deudas"><option>Las anteriores a la entrega son a cargo del vendedor</option><option>Las conocidas fueron informadas y las asume el comprador</option></select></div><div class="field"><label>Estado y observaciones (opcional)</label><textarea name="obs" placeholder="Ej. Kilometraje, accesorios, detalles visibles."></textarea></div>
+        <div class="actions">
+          <button type="button" class="primary" id="pdf">Descargar / guardar PDF</button>
+          <button type="button" class="copy" id="copy">Copiar texto</button>
+          <a class="button secondary" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+        </div>
+      </form>
+      <p id="status" class="small" aria-live="polite"></p>
+    </div>
+    <div class="card">
+      <h2>Vista previa</h2>
+      <div class="preview-wrap"><div class="preview" id="preview"></div></div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="card"><h2>¿Para qué sirve?</h2><p>El boleto de compraventa es un acuerdo escrito entre quien vende y quien compra un vehículo, donde se fijan el precio, la forma de pago y la entrega.</p></div>
+    <div class="card"><h2>¿Cómo se presenta o se usa?</h2><p>No reemplaza la transferencia ante el Registro Automotor, que se hace por separado (por ejemplo con el formulario 08). Antes de cerrar la operación conviene pedir un informe de dominio del vehículo y verificar que no tenga deudas o gravámenes.</p></div>
+    <div class="card"><h2>Errores comunes</h2><ul><li>Cerrar el trato sin verificar el dominio del vehículo.</li><li>Que el precio en números y en letras no coincida.</li><li>Pagar sin dejar constancia del pago.</li><li>Creer que el boleto reemplaza la transferencia del vehículo.</li></ul></div>
+    <div class="card faq"><h2>Preguntas frecuentes</h2><details><summary>¿El boleto me convierte en titular?</summary><p>No. La titularidad se define con la transferencia ante el Registro Automotor.</p></details><details><summary>¿Debo certificar las firmas?</summary><p>Para la transferencia suele haber requisitos específicos. Consultalo en el Registro Automotor antes de firmar.</p></details></div>
+    <div class="card sources"><h2>Fuentes oficiales</h2><ul><li><a href="https://www.argentina.gob.ar/normativa" target="_blank" rel="noopener">Argentina.gob.ar — Buscador de normativa nacional</a></li><li><a href="https://www.argentina.gob.ar/justicia/derechofacil" target="_blank" rel="noopener">Argentina.gob.ar — Derecho Fácil</a></li></ul></div>
+    <div class="card"><h2>Páginas relacionadas</h2><div class="related"><a href="autorizacion-manejo-vehiculo.html">Autorización de manejo</a><a href="recibo-dinero.html">Recibo de dinero</a></div></div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><strong>Modelos AR</strong><div class="small">Generadores locales de documentos. Sin servidor. Simulación sin validez legal.</div></div>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+function update() { preview.textContent = `BOLETO DE COMPRAVENTA DE VEHÍCULO — MODELO DE SIMULACIÓN
+
+Entre ${val("vendedor") || "[vendedor/a]"}, DNI ${val("dniVendedor") || "[DNI]"}${val("domVendedor") ? `, con domicilio en ${val("domVendedor")}` : ""}, en adelante EL VENDEDOR, y ${val("comprador") || "[comprador/a]"}, DNI ${val("dniComprador") || "[DNI]"}${val("domComprador") ? `, con domicilio en ${val("domComprador")}` : ""}, en adelante EL COMPRADOR, se acuerda la siguiente compraventa:
+
+PRIMERA (objeto): EL VENDEDOR vende y EL COMPRADOR compra el vehículo ${val("vehiculo") || "[marca y modelo]"}${val("anio") ? `, año ${val("anio")}` : ""}, dominio ${val("dominio") || "[dominio]"}${val("motorChasis") ? `, motor/chasis ${val("motorChasis")}` : ""}.
+
+SEGUNDA (precio): el precio total es de ${/USD/.test(val("moneda")) ? "USD" : "$"} ${fmtImporte(val("precio")) || "[precio]"} (${importeEnLetras(val("precio"), val("moneda")) || "[precio en letras]"}).
+Forma de pago: ${val("formaPago") || "[forma de pago]"}
+
+TERCERA (entrega): el vehículo se entrega el ${fd(val("entrega")) || "[fecha de entrega]"}, en el estado en que se encuentra y que EL COMPRADOR declara conocer.
+
+CUARTA (transferencia): las partes se comprometen a realizar los trámites de transferencia ante el Registro Automotor que corresponda y a firmar la documentación necesaria.
+
+QUINTA (deudas): ${val("deudas")}.
+${val("obs") ? `\nESTADO / OBSERVACIONES: ${val("obs")}\n` : ""}
+Lugar y fecha: ______________________________ (${fd(val("fecha")) || "fecha"})
+
+Firma del vendedor/a: ______________________
+Aclaración: ${val("vendedor")}
+
+Firma del comprador/a: _____________________
+Aclaración: ${val("comprador")}`; }
+initApp(update);
+</script>
+</body>
+</html>

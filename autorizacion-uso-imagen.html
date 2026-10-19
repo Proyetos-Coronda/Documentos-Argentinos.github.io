@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Autorización de uso de imagen — Generador Argentina</title>
+  <meta name="description" content="Generá un modelo de autorización de uso de imagen de simulación, con finalidad, medios y plazo, y guardalo en PDF.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Autorización de uso de imagen — Generador Argentina">
+  <meta property="og:description" content="Generá un modelo de autorización de uso de imagen de simulación, con finalidad, medios y plazo, y guardalo en PDF.">
+  <meta property="og:url" content="autorizacion-uso-imagen.html">
+  <!-- Google Search Console: pegá acá la etiqueta <meta name="google-site-verification" content="..."> que te entregue Search Console. -->
+  <meta name="color-scheme" content="light dark">
+  <script>try{var t=localStorage.getItem("modelosar:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Modelos Argentinos">
+      <span class="ghost">✦</span><span>Modelos AR</span>
+    </a>
+    <nav class="navlinks" aria-label="Principal"><a href="index.html">Inicio</a><a href="index.html#modelos">Todos los modelos</a></nav>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="sim-badge">SIMULACIÓN · sin validez legal</div>
+    <h1>Autorización de uso de imagen</h1>
+    <p>Autorizá el uso de tu imagen para una finalidad, un plazo y unos medios determinados.</p>
+    <div class="updated">Última actualización: 19 de octubre de 2026</div>
+  </div>
+</section>
+
+<main id="contenido" class="container" tabindex="-1">
+  <div class="notice warn"><strong>⚠️ Esto es una simulación.</strong> Modelos AR es, por ahora, una simulación de distintos documentos argentinos. Los modelos <strong>no están avalados por ninguna ley ni organismo oficial</strong>, no garantizan validez legal y no reemplazan los formularios, trámites o canales oficiales ni el asesoramiento de un abogado. Usalos solo como referencia o borrador.</div>
+  <div class="notice privacy"><strong>Privacidad:</strong> lo que escribís se procesa solamente en tu navegador y no se envía a ningún servidor. Solo si activás «Guardar borrador», se guarda una copia en este navegador, que podés borrar cuando quieras.</div>
+
+  <section class="workspace">
+    <div class="card">
+      <h2>Completá los datos</h2>
+      <p class="small">La vista previa se actualiza mientras escribís.</p>
+      <form id="form">
+<div class="grid"><div class="field"><label>Titular de la imagen</label><input name="titular" type="text" required></div><div class="field"><label>DNI del titular</label><input name="dniTitular" type="text" required></div></div><div class="grid"><div class="field"><label>Si es menor: progenitor/a o tutor/a (opcional)</label><input name="responsable" type="text"></div><div class="field"><label>DNI del/de la responsable</label><input name="dniResponsable" type="text"></div></div><div class="grid"><div class="field"><label>Quién usará la imagen</label><input name="beneficiario" type="text" required></div><div class="field"><label>CUIT (opcional)</label><input name="cuitBeneficiario" type="text"></div></div><div class="field"><label>Finalidad del uso</label><textarea name="uso" placeholder="Ej. Publicar fotos de un evento en las redes del club." required></textarea></div><div class="grid"><div class="field"><label>Medios</label><select name="medios"><option>Redes sociales</option><option>Sitio web</option><option>Material impreso</option><option>Cualquier medio</option></select></div><div class="field"><label>Alcance territorial</label><select name="ambito"><option>Argentina</option><option>Internacional</option></select></div></div><div class="grid"><div class="field"><label>Vigente desde</label><input name="desde" type="date"></div><div class="field"><label>Vigente hasta</label><input name="hasta" type="date"></div></div><div class="field"><label>Modalidad</label><select name="modalidad"><option>Gratuita</option><option>Con compensación acordada por separado</option></select></div>
+        <div class="actions">
+          <button type="button" class="primary" id="pdf">Descargar / guardar PDF</button>
+          <button type="button" class="copy" id="copy">Copiar texto</button>
+          <a class="button secondary" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+        </div>
+      </form>
+      <p id="status" class="small" aria-live="polite"></p>
+    </div>
+    <div class="card">
+      <h2>Vista previa</h2>
+      <div class="preview-wrap"><div class="preview" id="preview"></div></div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="card"><h2>¿Para qué sirve?</h2><p>Sirve para dejar por escrito que una persona permite que otra use su imagen, indicando para qué, por cuánto tiempo y por qué medios.</p></div>
+    <div class="card"><h2>¿Cómo se presenta o se usa?</h2><p>Se firma antes de que se use la imagen y cada parte conserva una copia. Cuando el titular es menor de edad, firma su progenitor/a o tutor/a. El derecho a la imagen está protegido por el Código Civil y Comercial: ante dudas, consultá a un profesional.</p></div>
+    <div class="card"><h2>Errores comunes</h2><ul><li>Autorizar «para todo uso» sin indicar finalidad ni plazo.</li><li>No aclarar los medios (redes, web, impresos).</li><li>Olvidar la firma del responsable cuando el titular es menor.</li><li>No conservar una copia firmada.</li></ul></div>
+    <div class="card faq"><h2>Preguntas frecuentes</h2><details><summary>¿Puede ser por tiempo indeterminado?</summary><p>Conviene fijar un plazo y una finalidad clara. Evitá autorizaciones demasiado amplias.</p></details><details><summary>¿Y si es una persona menor?</summary><p>Debe firmar su progenitor/a o tutor/a. Completá esos campos en el formulario.</p></details></div>
+    <div class="card sources"><h2>Fuentes oficiales</h2><ul><li><a href="https://www.argentina.gob.ar/normativa" target="_blank" rel="noopener">Argentina.gob.ar — Buscador de normativa nacional</a></li><li><a href="https://www.argentina.gob.ar/justicia/derechofacil" target="_blank" rel="noopener">Argentina.gob.ar — Derecho Fácil</a></li></ul></div>
+    <div class="card"><h2>Páginas relacionadas</h2><div class="related"><a href="poder-especial.html">Poder especial</a><a href="autorizacion-viaje-menores.html">Autorización de viaje de menores</a></div></div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><strong>Modelos AR</strong><div class="small">Generadores locales de documentos. Sin servidor. Simulación sin validez legal.</div></div>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+function update() { preview.textContent = `AUTORIZACIÓN DE USO DE IMAGEN — MODELO DE SIMULACIÓN
+
+Yo, ${val("titular") || "[titular]"}, DNI ${val("dniTitular") || "[DNI]"}${val("responsable") ? `, representado/a por ${val("responsable")}${val("dniResponsable") ? `, DNI ${val("dniResponsable")}` : ""}, en su carácter de progenitor/a o tutor/a` : ""}, AUTORIZO a ${val("beneficiario") || "[quien usará la imagen]"}${val("cuitBeneficiario") ? ` (CUIT ${val("cuitBeneficiario")})` : ""} a utilizar mi imagen (fotografías y/o videos) con la siguiente finalidad:
+
+${val("uso") || "[finalidad del uso]"}
+
+Medios: ${val("medios")}
+Alcance territorial: ${val("ambito")}
+Vigencia: desde el ${fd(val("desde")) || "[fecha]"} hasta el ${fd(val("hasta")) || "[fecha]"}
+Modalidad: ${val("modalidad")}
+
+La presente autorización se limita a la finalidad indicada. Cualquier uso distinto requerirá una nueva autorización.
+
+Lugar y fecha: ______________________________
+
+Firma: ____________________________________
+Aclaración: ${val("responsable") || val("titular")}
+DNI: ${val("dniResponsable") || val("dniTitular")}`; }
+initApp(update);
+</script>
+</body>
+</html>

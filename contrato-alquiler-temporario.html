@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contrato de alquiler temporario — Argentina</title>
+  <meta name="description" content="Generador orientativo de contrato de alquiler temporario para turismo, descanso o finalidad temporal.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Contrato de alquiler temporario — Argentina">
+  <meta property="og:description" content="Generador orientativo de contrato de alquiler temporario para turismo, descanso o finalidad temporal.">
+  <meta property="og:url" content="contrato-alquiler-temporario.html">
+  <!-- Google Search Console: pegá acá la etiqueta <meta name="google-site-verification" content="..."> que te entregue Search Console. -->
+  <meta name="color-scheme" content="light dark">
+  <script>try{var t=localStorage.getItem("modelosar:theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Modelos Argentinos">
+      <span class="ghost">✦</span><span>Modelos AR</span>
+    </a>
+    <nav class="navlinks" aria-label="Principal"><a href="index.html">Inicio</a><a href="index.html#modelos">Todos los modelos</a></nav>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="sim-badge">SIMULACIÓN · sin validez legal</div>
+    <h1>Contrato de alquiler temporario</h1>
+    <p>Completá las condiciones principales y obtené un borrador ordenado para revisar y firmar.</p>
+    <div class="updated">Última actualización: 19 de octubre de 2026</div>
+  </div>
+</section>
+
+<main id="contenido" class="container" tabindex="-1">
+  <div class="notice warn"><strong>⚠️ Esto es una simulación.</strong> Modelos AR es, por ahora, una simulación de distintos documentos argentinos. Los modelos <strong>no están avalados por ninguna ley ni organismo oficial</strong>, no garantizan validez legal y no reemplazan los formularios, trámites o canales oficiales ni el asesoramiento de un abogado. Usalos solo como referencia o borrador.</div>
+  <div class="notice privacy"><strong>Privacidad:</strong> lo que escribís se procesa solamente en tu navegador y no se envía a ningún servidor. Solo si activás «Guardar borrador», se guarda una copia en este navegador, que podés borrar cuando quieras.</div>
+
+  <section class="workspace">
+    <div class="card">
+      <h2>Completá los datos</h2>
+      <p class="small">La vista previa se actualiza mientras escribís.</p>
+      <form id="form">
+<div class="grid"><div class="field"><label>Locador</label><input name="locador" required></div><div class="field"><label>DNI/CUIT locador</label><input name="dniLocador"></div></div>
+<div class="grid"><div class="field"><label>Locatario</label><input name="locatario" required></div><div class="field"><label>DNI/Pasaporte locatario</label><input name="dniLocatario"></div></div>
+<div class="field"><label>Inmueble</label><input name="inmueble" required></div>
+<div class="grid"><div class="field"><label>Destino temporal</label><input name="destino" placeholder="Turismo, descanso, etc."></div><div class="field"><label>Cantidad de ocupantes</label><input name="ocupantes" type="number" min="1"></div></div>
+<div class="grid"><div class="field"><label>Inicio</label><input name="inicio" type="date" required></div><div class="field"><label>Fin</label><input name="fin" type="date" required></div></div>
+<div class="grid"><div class="field"><label>Precio total</label><input name="precio" inputmode="decimal" required></div><div class="field"><label>Moneda</label><select name="moneda"><option>Pesos argentinos</option><option>Dólares estadounidenses</option></select></div></div>
+<div class="field"><label>Forma y fechas de pago</label><input name="pago" placeholder="Ej. 50% reserva y saldo al ingresar"></div>
+<div class="field"><label>Depósito / garantía (si corresponde)</label><input name="deposito"></div>
+<div class="field"><label>Inventario / estado del inmueble (opcional)</label><textarea name="inventario" placeholder="Muebles, electrodomésticos, llaves, estado general..."></textarea></div>
+<div class="field"><label>Reglas especiales (opcional)</label><textarea name="reglas" placeholder="Mascotas, cantidad máxima, prohibición de fiestas, horarios, etc."></textarea></div>
+
+        <div class="actions">
+          <button type="button" class="primary" id="pdf">Descargar / guardar PDF</button>
+          <button type="button" class="copy" id="copy">Copiar texto</button>
+          <a class="button secondary" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+        </div>
+      </form>
+      <p id="status" class="small" aria-live="polite"></p>
+    </div>
+    <div class="card">
+      <h2>Vista previa</h2>
+      <div class="preview-wrap"><div class="preview" id="preview"></div></div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="card"><h2>¿Para qué sirve?</h2><p>El contrato temporario permite documentar una locación de inmueble con una finalidad temporal. El Código Civil y Comercial permite que las partes establezcan el plazo; para locaciones temporales se contemplan reglas específicas y no debe confundirse un alquiler turístico o temporario con una vivienda permanente.</p></div>
+    <div class="card"><h2>¿Cómo se presenta o se envía?</h2><p>El contrato debe reflejar claramente inmueble, partes, destino, plazo, precio, moneda, forma de pago, depósito si existe, inventario y reglas de uso. Firmá un ejemplar cada parte. Para operaciones complejas, inmuebles con particularidades o cláusulas especiales, conviene revisión profesional.</p></div>
+    <div class="card"><h2>Errores comunes</h2><ul><li>No usar un contrato temporario para encubrir una locación de vivienda permanente.</li><li>No dejar ambiguos el inicio y el final.</li><li>No omitir el destino temporal.</li><li>No entregar llaves sin dejar constancia del estado del inmueble y de los bienes.</li></ul></div>
+    <div class="card faq"><h2>Preguntas frecuentes</h2><details><summary>¿Puedo pactar el precio en dólares?</summary><p>El Código Civil y Comercial actualizado permite pactar el alquiler en moneda de curso legal o extranjera, según acuerden las partes.</p></details><details><summary>¿Hay que certificar firmas?</summary><p>La certificación notarial no es una regla general que haga válido todo contrato temporario, pero puede ser conveniente según el riesgo, la operación o lo que solicite una plataforma/tercero.</p></details><details><summary>¿Tiene que durar menos de tres meses?</summary><p>El Código establece que, si no se pacta plazo, para locaciones temporales se atiende a los usos y costumbres del lugar. Además, ciertas reglas distinguen los contratos destinados a turismo, descanso o similares.</p></details></div>
+    <div class="card">
+      <h2>Espacio para imagen o captura</h2>
+      <div class="image-slot">Podés mostrar una captura de un contrato modelo señalando visualmente las cláusulas de partes, inmueble, plazo, precio e inventario, con datos ficticios.</div>
+    </div>
+    <div class="card sources"><h2>Fuentes oficiales</h2><ul><li><a href="https://www.argentina.gob.ar/normativa/nacional/norma-235975/actualizacion" target="_blank" rel="noopener">Código Civil y Comercial — texto actualizado</a></li><li><a href="https://www.argentina.gob.ar/normativa/nacional/decreto-70-2023-395521/texto" target="_blank" rel="noopener">DNU 70/2023 — modificaciones a locaciones</a></li><li><a href="https://www.argentina.gob.ar/node/159549" target="_blank" rel="noopener">Argentina.gob.ar — Alquileres</a></li></ul></div>
+    <div class="card"><h2>Páginas relacionadas</h2><div class="related"><a href="recibo-alquiler.html">Recibo de alquiler</a><a href="carta-documento.html">Carta documento</a></div></div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><strong>Modelos AR</strong><div class="small">Generadores locales de documentos. Sin servidor. Simulación sin validez legal.</div></div>
+    <a class="pill cafe" href="https://cafecito.app/proyectitos" target="_blank" rel="noopener">Invitame un cafecito</a>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+function update() { preview.textContent = `CONTRATO DE LOCACIÓN TEMPORARIA
+
+Entre ${val("locador")}, DNI/CUIT ${val("dniLocador")}, en adelante LOCADOR, y ${val("locatario")}, DNI/Pasaporte ${val("dniLocatario")}, en adelante LOCATARIO, se acuerda la locación temporaria del inmueble ubicado en ${val("inmueble")}.
+
+1. DESTINO
+El inmueble será destinado a ${val("destino") || "turismo, descanso o finalidad temporal compatible con el contrato"} y será ocupado por ${val("ocupantes") || "[cantidad]"} persona/s.
+
+2. PLAZO
+La locación comienza el ${val("inicio") || "[fecha de inicio]"} y finaliza el ${val("fin") || "[fecha de finalización]"}.
+
+3. PRECIO Y PAGO
+El precio total se fija en ${val("precio") || "[importe]"} (${val("moneda")}). Forma y fechas de pago: ${val("pago") || "[completar]"}.
+
+4. DEPÓSITO / GARANTÍA
+${val("deposito") || "No se pacta depósito / garantía, salvo acuerdo escrito adicional."}
+
+5. ESTADO E INVENTARIO
+${val("inventario") || "Las partes deberán verificar y dejar constancia del estado del inmueble y de los bienes entregados."}
+
+6. REGLAS DE USO
+${val("reglas") || "El inmueble deberá utilizarse conforme al destino pactado y a las normas aplicables."}
+
+7. ENTREGA Y DEVOLUCIÓN
+Las partes acuerdan coordinar la entrega de llaves al inicio y la restitución del inmueble al finalizar el plazo, dejando constancia del estado en que se devuelve.
+
+8. DOMICILIOS Y NOTIFICACIONES
+Las partes constituyen como domicilios los que indiquen en el instrumento firmado y se comprometen a mantener medios de contacto actualizados.
+
+Lugar y fecha: ______________________________
+
+LOCADOR: ${val("locador")}
+Firma: ____________________________________
+
+LOCATARIO: ${val("locatario")}
+Firma: ____________________________________`; }
+initApp(update);
+</script>
+</body>
+</html>
